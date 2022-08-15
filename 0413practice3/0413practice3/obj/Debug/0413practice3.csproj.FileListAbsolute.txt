@@ -1,0 +1,14 @@
+C:\Users\iii\Desktop\0413practice3\0413practice3\bin\Debug\0413practice3.exe.config
+C:\Users\iii\Desktop\0413practice3\0413practice3\bin\Debug\0413practice3.exe
+C:\Users\iii\Desktop\0413practice3\0413practice3\bin\Debug\0413practice3.pdb
+C:\Users\iii\Desktop\0413practice3\0413practice3\obj\Debug\0413practice3.csprojAssemblyReference.cache
+C:\Users\iii\Desktop\0413practice3\0413practice3\obj\Debug\0413practice3.csproj.CoreCompileInputs.cache
+C:\Users\iii\Desktop\0413practice3\0413practice3\obj\Debug\0413practice3.exe
+C:\Users\iii\Desktop\0413practice3\0413practice3\obj\Debug\0413practice3.pdb
+D:\0413practice3\0413practice3\bin\Debug\0413practice3.exe.config
+D:\0413practice3\0413practice3\bin\Debug\0413practice3.exe
+D:\0413practice3\0413practice3\bin\Debug\0413practice3.pdb
+D:\0413practice3\0413practice3\obj\Debug\0413practice3.csprojAssemblyReference.cache
+D:\0413practice3\0413practice3\obj\Debug\0413practice3.csproj.CoreCompileInputs.cache
+D:\0413practice3\0413practice3\obj\Debug\0413practice3.exe
+D:\0413practice3\0413practice3\obj\Debug\0413practice3.pdb

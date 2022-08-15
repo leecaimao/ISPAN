@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <title>Document</title>
+
+
+
+    <style>
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        /* .D1 {
+            color: mediumvioletred;
+            text-align: center;
+            margin-top: 40px;
+            display: flex;
+        } */
+
+
+        .box {
+            background-color: bisque;
+            border: 2px solid saddlebrown;
+            width: 500px;
+            height: 200px;
+            margin-top: 40px;
+            margin-left: 300px;
+
+
+        }
+
+
+        .box2 {
+
+            background-color: rgb(252, 213, 224);
+            border: 2px solid rgb(90, 89, 88);
+            width: 300px;
+            height: 100px;
+            margin-top: -50px;
+            margin-left: 500px;
+        }
+
+
+
+
+        /* button {
+            margin-right: 500px;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        .BTN {
+            width: 150px;
+            height: 50px;
+            margin-top: 40px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            margin-left: 480px;
+        }
+
+        .BTN2 {
+            margin-top: 40px;
+            margin-left: 300px;
+        }
+
+
+
+
+        .container {
+            padding-top: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        input {
+            border-radius: 5px;
+            margin-right: 20px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+
+        }
+
+
+
+        .refresh {
+            margin-left: 700px;
+            margin-bottom: 20px;
+        }
+
+
+
+        
+    </style>
+
+
+</head>
+
+
+<body>
+<div>
+    <h1>猜數字遊戲</h1>
+
+
+    <div class="container">
+        <div class="D1">
+            <div
+                style="color:darkred; font-size: large ; font-weight: bolder; text-align: center; margin-bottom: 30px;">
+                玩家擬猜的數字
+            </div>
+            <div>
+                <button class="refresh" onclick="refresh()">重啟遊戲</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" style="text-align:center">
+                <input id="Num1" type="text" maxlength="1" oninput="value=value.replace(/[^\d]/g,'')"
+                    autocomplete="off">
+                <input id="Num2" type="text" maxlength="1" oninput="value=value.replace(/[^\d]/g,'')"
+                    autocomplete="off">
+                <input id="Num3" type="text" maxlength="1" oninput="value=value.replace(/[^\d]/g,'')"
+                    autocomplete="off">
+                <input id="Num4" type="text" maxlength="1" oninput="value=value.replace(/[^\d]/g,'')"
+                    autocomplete="off">
+                <input id="Num5" type="text" maxlength="1" oninput="value=value.replace(/[^\d]/g,'')"
+                    autocomplete="off">
+
+            </div>
+
+        </div>
+
+        <div style="justify-content: center;text-align:center; padding-top: 40px;">
+            <button onclick="checkNum()">檢視猜測結果</button>
+
+        </div>
+
+
+
+
+      
+
+            <div class="box" id="box"> </div>
+
+
+            <div>
+                <button class="BTN2" onclick="boss()">顯示莊家的數字</button>
+                <div class="box2" id="boss"> </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        var num = [];
+
+        for (var i = 0; i < 5; i++) {
+            num[i] = Math.floor(Math.random() * 10);
+            for (var j = 0; j < i; j++) {
+                if (num[i] == num[j]) {
+                    i--
+                }
+            }
+        }
+
+
+
+
+        function checkNum() {
+            var chooseNum = new Array(5);
+            chooseNum[0] = document.getElementById('Num1').value
+            chooseNum[1] = document.getElementById('Num2').value
+            chooseNum[2] = document.getElementById('Num3').value
+            chooseNum[3] = document.getElementById('Num4').value
+            chooseNum[4] = document.getElementById('Num5').value
+
+            var check = Array.from(new Set(chooseNum))
+            if (check.length != 5) {        //如果有重複
+                alert("重複")
+            }
+            else {                       //OK了(沒重複)就進行比對
+                var times = 0;
+                var right = "您猜對的數字有:"
+
+                for (var i = 0; i < 5; i++) {
+                    for (var j = 0; j < 5; j++) {
+                        if (check[i] == num[j]) {
+                            right += check[i] + " ";
+                            times += 1
+                        }
+                    }
+                }
+                var a = document.getElementById("box");
+                a.innerHTML = `${right}<br>共猜對${times}個數字`;
+
+            }
+
+
+        }
+
+        function boss() {
+            var a = document.getElementById("boss");
+            a.innerHTML = `莊家的數字為:${num.sort()}`;
+        }
+
+
+        function refresh() {
+            parent.document.location.reload()
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

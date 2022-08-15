@@ -1,0 +1,14 @@
+C:\Users\iii\Desktop\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\iii\Desktop\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\iii\Desktop\0408ConsoleApp1\0408ConsoleApp1\bin\Debug\0408ConsoleApp1.exe.config
+C:\Users\iii\Desktop\0408ConsoleApp1\0408ConsoleApp1\bin\Debug\0408ConsoleApp1.exe
+C:\Users\iii\Desktop\0408ConsoleApp1\0408ConsoleApp1\bin\Debug\0408ConsoleApp1.pdb
+C:\Users\iii\Desktop\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.exe
+C:\Users\iii\Desktop\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.pdb
+C:\Users\nita8\OneDrive\桌面\CAI\0408ConsoleApp1\0408ConsoleApp1\bin\Debug\0408ConsoleApp1.exe.config
+C:\Users\nita8\OneDrive\桌面\CAI\0408ConsoleApp1\0408ConsoleApp1\bin\Debug\0408ConsoleApp1.exe
+C:\Users\nita8\OneDrive\桌面\CAI\0408ConsoleApp1\0408ConsoleApp1\bin\Debug\0408ConsoleApp1.pdb
+C:\Users\nita8\OneDrive\桌面\CAI\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\nita8\OneDrive\桌面\CAI\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\nita8\OneDrive\桌面\CAI\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.exe
+C:\Users\nita8\OneDrive\桌面\CAI\0408ConsoleApp1\0408ConsoleApp1\obj\Debug\0408ConsoleApp1.pdb
